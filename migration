@@ -1,0 +1,6 @@
+<?php 
+
+echo "connecting db";
+require __DIR__."/config/database.php";
+echo "installing migration complete";
+
