@@ -27,6 +27,23 @@
     <!-- Custom styles for this template-->
     <link href="<?= $BASE_URL ?>template/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Bootstrap core JavaScript-->
+    <script src="<?=$BASE_URL?>template/vendor/jquery/jquery.min.js"></script>
+    <script src="<?=$BASE_URL?>template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="<?=$BASE_URL?>template/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="<?=$BASE_URL?>template/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="<?=$BASE_URL?>template/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="<?=$BASE_URL?>template/js/demo/chart-area-demo.js"></script>
+    <script src="<?=$BASE_URL?>template/js/demo/chart-pie-demo.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -101,22 +118,6 @@
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="<?=$BASE_URL?>template/vendor/jquery/jquery.min.js"></script>
-    <script src="<?=$BASE_URL?>template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="<?=$BASE_URL?>template/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="<?=$BASE_URL?>template/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="<?=$BASE_URL?>template/vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="<?=$BASE_URL?>template/js/demo/chart-area-demo.js"></script>
-    <script src="<?=$BASE_URL?>template/js/demo/chart-pie-demo.js"></script>
     <?=$script?>
 </body>
 
