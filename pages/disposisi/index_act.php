@@ -38,6 +38,13 @@ try{
 		$stmt->execute();
 		$rsult          = $stmt->get_result();
 		$assoc          = $rsult->fetch_assoc();
+		$ses = $_SESSION['login']['id'];
+		echo "
+			<script>
+				console.log('$assoc[teruskan_ke]');
+				console.log('$ses');
+			</script>
+		";
 		$vi['disp_btn'] = $assoc['teruskan_ke'] === $_SESSION['login']['id'];
 
 		$vi             = array_merge($vi,$value);

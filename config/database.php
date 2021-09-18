@@ -138,6 +138,18 @@ try{
 	echo "Add Record To User\n";
 	$sql = "INSERT INTO user(name,email,password,jabatan_id) VALUES('Administrator Sistem','katombo@gmail.com',MD5('admin'),1)";
 	$conn->query($sql);
+	$sql = "
+	DROP TRIGGER insert_agenda;
+	CREATE TRIGGER insert_agenda 
+		BEFORE INSERT ON agenda 
+		FOR EACH ROW 
+			BEGIN
+				INSERT INTO disposisi(teruskan_ke,agenda_id,user_id,instruksi,catatan)VALUES(NEW.user_id,NEW.id,NEW.user_id,'-','-');
+			END;
+	
+	";
+	$conn->multi_query($sql);
+	var_dump($conn->errno);
 }catch(\Exception $r){
 	?>
 	<pre>
